@@ -1,0 +1,191 @@
+body{
+    background:white;
+    font-family: 'Inter', sans-serif;
+    
+}
+.navbar{
+    color: rgb(218, 203, 203);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    margin: 15px 5%;
+}
+.nav{
+    display: flex;    
+    justify-content: space-between;
+    align-items: center;
+}
+.nav ul{
+    display: flex;
+    list-style: none;
+}
+.nav a{
+    color:hsl(233, 8%, 79%);
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+.container{
+    display: flex;
+    display: inline;
+    justify-content: center;
+    align-items: center;
+}
+.home{
+    display: flex;
+    justify-content: center;
+    height: 80vh;
+    margin: 15px 5%;
+    padding: 10px;
+}
+h1{
+    font-size: 40px;
+    font-weight: bolder;
+}
+.home .left img{
+    width: 98%;
+}
+.home .left {
+    margin: 0 10px;
+}
+.home .future {
+    display: flex;
+}
+.home .right {
+    background-color: hsl(240, 100%, 5%);
+    color: hsl(36, 100%, 99%);
+    padding: 0px 30px;
+    
+}
+.home .right p{
+    color: hsl(233, 8%, 79%);
+    font-size: 15px;
+}
+
+.future .section1{
+    color: hsl(240, 100%, 5%);
+    flex: 100%;
+    margin: 15px 0;
+    font-weight: bolder;
+    justify-content: center;
+    align-items: center;
+}
+.future .section2 {
+    color: hsl(233, 8%, 79%);
+    margin: 15px 0;
+    line-height: 25px;
+   
+}
+.future .section2 button {
+    background-color: hsl(5, 85%, 63%);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    margin: 30px 0;
+    text-transform: uppercase;
+    width: 40%;
+    /* height: 45px; */
+}
+.future .section2 button a{
+    color: hsl(36, 100%, 99%);
+    text-decoration: none;
+    font-weight: 800;
+}
+
+.section-cards{
+    display: flex;
+    justify-content: space-around;
+    margin: 0px 4%;
+    align-items: center;
+}
+.section-cards .section .article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.section-cards .section .article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;    
+}
+.section-cards .section .article p {
+    color: hsl(233, 8%, 79%);
+    font-size: 15px;
+}
+.section-cards .section .article h1 {
+    color: hsl(233, 8%, 79%);
+}
+.toggle{
+    display: none;
+}
+
+@media (max-width: 375px) {
+            .nav {
+               display: none;
+                position: absolute;
+                left: 0;
+                padding: 10px 0;
+            }
+            .toggle {
+                 display:block;
+                 cursor: pointer;
+            }
+            .nav ul {
+                display: block;
+                flex-direction: column;
+            }
+            .nav li {
+                margin-right: 0;
+                margin-bottom: 10px;
+            }    
+            .home {
+                flex-direction: column;
+                    gap: 0;
+            }
+            .home .left img {
+                flex-direction: column;
+                width: 90%;
+                position: absolute;
+                }    
+            
+            .right .left {
+                display: flex;
+                flex-direction: column;
+            } 
+            .future  {
+                flex-direction: column;
+            }
+            .section-cards{
+                padding: 10px 0;
+                flex-direction: column;
+                margin-top: 300px;
+                margin-left: 25px;
+                        }   
+            .section-cards .section .article img {
+                width: 120px;
+                height: 150px;
+            }
+            .section-cards .section .article h1{
+                font-size: 20px;                    
+            }
+            .section-cards .section .article h3 {
+                font-size: 15px;
+            }
+            .section-cards .section .article p {
+                font-size: 12px;
+            }
+            .section-cards .section {
+                flex-direction: column;
+            }
+            .future .section2 button {
+                background-color: hsl(5, 85%, 63%);
+                color: white;
+                padding: 10px 20px;
+                text-transform: uppercase;
+                width: 60%;
+            }
+
+        }
